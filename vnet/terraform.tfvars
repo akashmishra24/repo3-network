@@ -1,4 +1,4 @@
-resource_group_name = "Akash-SpokeRG"
+resource_group_name = "rg-iac-cox-poc-01"
 dns_server_ip      = ["8.8.8.8"]
 vnet_address_space = ["10.1.0.0/16"]
 # subnet_name             = "subnet-1"
