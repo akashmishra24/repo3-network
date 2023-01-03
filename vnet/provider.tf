@@ -1,8 +1,8 @@
 terraform {
   backend "azurerm" {
-    resource_group_name  = "rg-iac-cox-poc-01"
-    storage_account_name = "tfstatedemo1"
-    container_name       = "tfstate"
+#     resource_group_name  = "rg-iac-cox-poc-01"
+#     storage_account_name = "tfstatedemo1"
+#     container_name       = "tfstate"
     key                  = "vnet.tfstate"
 #     use_azuread_auth = true
   }
