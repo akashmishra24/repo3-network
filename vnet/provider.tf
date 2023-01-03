@@ -4,6 +4,7 @@ terraform {
     storage_account_name = "tfstatedemo1"
     container_name       = "tfstate"
     key                  = "vnet.tfstate"
+    use_oidc = true
   }
 }
 
