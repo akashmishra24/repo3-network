@@ -35,7 +35,7 @@ jobs:
       uses: hashicorp/setup-terraform@v1
       
     - name: Azure Login
-      uses: Azure/login@v1.4.6
+      uses: Azure/login@v1
       with:
         # ClientId of the Azure Service principal created.
         client-id: ${{ secrets.AZURE_AD_CLIENT_ID }}
@@ -43,8 +43,6 @@ jobs:
         tenant-id: ${{ secrets.AZURE_AD_TENANT_ID }}
         # Azure subscriptionId
         subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-        # Provide audience field for access-token. Default value is api://AzureADTokenExchange
-        audience: api://AzureADTokenExchange 
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
